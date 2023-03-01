@@ -15,7 +15,7 @@ possibly do?`,
 const dynamicText = document.querySelector(".wrapper p");
 
 function doDynamic(arr_, dynamicText_) {
-  const index = Math.round(Math.random(arr_) * arr_.length - 1);
+  const index = Math.round(Math.random(arr_) * (arr_.length - 1));
 
   dynamicText_.innerHTML = arr_[index];
 }
